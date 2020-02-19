@@ -51,6 +51,7 @@ nav a:hover {
 .list-item {
   color: black;
   font-weight: bold;
+  text-decoration: none;
 }
 @keyframes App-logo-spin {
   from {
