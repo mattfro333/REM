@@ -1,10 +1,18 @@
 import React from 'react';
+import articleContent from './article-content';
+const ArticlePage = ({match}) => {
+const name = match.params.name;
+// const article = articleContent.find(article => article.name === name);
+//
+//   if(!article) return <h1>Article does not exist!</h1>
 
-const ArticlesPage = () => (
+return(
+
   <>
+    <h1>{name}</h1>
 
-    <h1>This is an article</h1>
   </>
 );
+}
 
-export default ArticlesPage;
+export default ArticlePage;
