@@ -32,9 +32,6 @@ ul {
   display:flex;
 
 }
-li {
-
-}
 
 
 nav a {
@@ -48,16 +45,21 @@ nav a:hover {
     color: aqua;
     font-weight: bold;
 }
+
+p {
+  font-size: 1em;
+  padding-right: 5em;
+  padding-left: 5em;
+  margin: 2em;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: black;
+}
 .list-item {
   color: black;
   font-weight: bold;
   text-decoration: none;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  text-decoration: none;
 }
