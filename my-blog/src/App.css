@@ -46,6 +46,14 @@ nav a:hover {
     font-weight: bold;
 }
 
+a:link {
+  text-decoration: none;
+}
+h3:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
 p {
   font-size: 1em;
   padding-right: 5em;
@@ -55,11 +63,8 @@ p {
   text-decoration: none;
   color: black;
 }
-.list-item {
+h3 {
   color: black;
   font-weight: bold;
-  text-decoration: none;
-}
-h3 {
   text-decoration: none;
 }
