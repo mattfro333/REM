@@ -1,7 +1,7 @@
 import React from 'react';
 import articleContent from './article-content';
 
-const ArticlePage = ({match}) => {
+const ArticlesListPage = ({match}) => {
   const name = match.params.name;
   const article = articleContent.find(article => article.name === name);
 
@@ -18,4 +18,4 @@ return(
 );
 }
 
-export default ArticlePage;
+export default ArticlesListPage;
