@@ -6,25 +6,27 @@ import AboutPage from './pages/AboutPage';
 import ArticlesListPage from './pages/ArticlesListPage';
 import ArticlePage from './pages/ArticlePage';
 import NavBar from './components/NavBar';
-// import NotFoundPage from './pages/NotFoundPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 class App extends React.Component {
   render() {
     return (
-        <Router>
-        <div className="App">
+      <Router>
+       <div className="App">
         <NavBar />
           <div id="page-body">
-          <Route path ="/" component={HomePage} exact />
-          <Route path ="/about" component={AboutPage} exact />
-          <Route path ="/articles-list" component={ArticlesListPage} exact />
-          <Route path ="/article/:name" component={ArticlePage} exact />
-          </div>
+         <Switch>
+          <Route path ="/" component={HomePage} exact/>
+          <Route path ="/about" component={AboutPage} />
+          <Route path ="/articles-list" component={ArticlesListPage} />
+          <Route path ="/article/:name" component={ArticlePage} />
+          <Route component={NotFoundPage} />
+         </Switch>
         </div>
-        </Router>
-
-    );
-  }
+       </div>
+     </Router>
+   );
+ }
 }
 
 export default App;
