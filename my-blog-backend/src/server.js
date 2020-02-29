@@ -1,5 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import { MongoClient } from 'mongodb';
 
 const articlesInfo = {
   'learn-react': {
@@ -20,6 +21,12 @@ const app = express();
 
 app.use(bodyParser.json());
 
+app.get('/api/articles/:name', (req, res) => {
+    const articleName = req.params.name;
+
+    MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true})
+})
+
 app.post('/api/articles/:name/upvote', (req, res) => {
   const articleName = req.params.name;
 
@@ -33,7 +40,7 @@ app.post('/api/articles/:name/add-comment', (req, res) => {
 
     articlesInfo[articleName].comments.push({ username, text});
 
-    res.status(200).send(articlesInfo[articleName]); 
+    res.status(200).send(articlesInfo[articleName]);
 })
 
 app.listen(8000, () => console.log('Listening on port 8000'));
