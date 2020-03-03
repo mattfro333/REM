@@ -2,10 +2,12 @@
   "name": "my-blog",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "react-scripts": "3.4.0"
