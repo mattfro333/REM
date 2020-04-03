@@ -5,20 +5,17 @@ import NotFoundPage from './NotFoundPage'
 const ArticlesListPage = ({match}) => {
   const name = match.params.name;
   const article = articleContent.find(article => article.name === name);
-console.log(article)
+
   const [articleInfo, setArticleInfo] = useState({upvotes: 0, comments: []});
-console.log(setArticleInfo)
+
 useEffect(async() => {
   const fetchData = async () => {
-    const result = await fetch(`/api/articles/${name}`)
-    const body = await result.json();
-    console.log(result)
-    console.log(body)
-    setArticleInfo(body);
+    const result = await fetch("http://localhost:8000/api/articles/")
+    const body = result.json();
   }
-  console.log(fetchData())
   fetchData();
-}, [name]);
+  setArticleInfo({ upvotes: Math.ceil(Math.random() * 10) });
+}, []);
 
       if(!article) return <NotFoundPage/>
 
