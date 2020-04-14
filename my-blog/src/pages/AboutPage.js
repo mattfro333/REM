@@ -1,13 +1,33 @@
 import React from 'react';
 
 const AboutPage = () => (
-  <>
-
-    <h1>About Us</h1>
-    <h4>"Us ......... and them ....... And after all we're only ordinary men..... Down ....... Out..... It can't be helped that there's a lot of it about"</h4>
-    <h5>-Pink Floyd</h5>
-    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
-  </>
+    <>
+    <h1>About me</h1>
+    <p>
+        Welcome to my blog! Proin congue
+        ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
+        Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
+        non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
+        eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at 
+        sodales purus euismod.
+    </p>
+    <p>
+        Donec vel mauris lectus. Etiam nec lectus urna. Sed sodales ultrices dapibus. 
+        Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
+        nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
+        sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
+        interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
+        consequat quam. Vivamus accumsan dui in facilisis aliquet.,
+    </p>
+    <p>
+        Etiam nec lectus urna. Sed sodales ultrices dapibus. 
+        Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
+        nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
+        sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
+        interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
+        consequat quam. Vivamus accumsan dui in facilisis aliquet.,
+    </p>
+    </>
 );
 
 export default AboutPage;
