@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import ArticlesList from '../components/ArticlesList';
 import NotFoundPage from './NotFoundPage';
 import articleContent from './article-content';
-import CommentsList from '../components/CommentsList.js'
+import CommentsList from '../components/CommentsList.js';
+import UpvotesSection from '../components/UpvotesSection.js'
 
 const ArticlePage = ({ match }) => {
     const name = match.params.name;
@@ -28,7 +29,7 @@ const ArticlePage = ({ match }) => {
     return (
         <>
         <h1>{article.title}</h1>
-        <p>This post has been upvoted {articleInfo.upvotes} times</p>
+        <UpvotesSection articleName={name} upvotes={articleInfo.upvotes} setArticleInfo={setArticleInfo} />
         {article.content.map((paragraph, key) => (
             <p key={key}>{paragraph}</p>
         ))}
