@@ -13,8 +13,14 @@ button {
   cursor: pointer;
 }
 
+.clow {
+  position: relative;
+  top: 2.6em;
+  text-decoration: underline;
+}
+
 h3, h4 {
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 nav {
@@ -23,7 +29,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  background: lightgray;
 }
 
 nav ul {
@@ -88,14 +94,20 @@ nav a:hover {
 }
 
 #add-comment-form button {
-  width: 320px;
+  width: 11em;
+  border-radius: 1.6em;
 }
 
-#upvotes-section button, p {
+#upvotes-section button, h5 {
+  font-size: .9em;
   display: inline-block;
+  float: right;
+  margin-right: 16px;
+  border-radius: 1.6em;
+}
+p {
   margin-right: 16px;
 }
-
 .comment {
   border-bottom: 2px solid black;
   padding: 16px;
